@@ -1,0 +1,18 @@
+* {
+box-sizing: border-box;
+}
+
+div#wrapper {
+    margin: auto;
+    width: 1000px;
+    background-color: rgb(251, 235, 235);
+    padding: 5px;
+}
+
+body {
+    font-family: "Arial", "'sans serif";
+}
+
+section.links {
+    line-height: 20px;
+}

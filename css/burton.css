@@ -63,3 +63,13 @@ footer, footer a {
     background-color: rgb(166,166,166);
     color: white;
 }
+
+div.form-group {
+    width: 500px;
+    padding: 20px;
+}
+
+input {
+    float: right;
+    width: 300px;
+}
