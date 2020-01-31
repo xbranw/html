@@ -1,3 +1,7 @@
+* {
+    box-sizing:border-box;
+}
+
 body {
     font-family:"Arial", "sans,serif";
 }
@@ -13,10 +17,11 @@ nav a {
     text-decoration:none;
     padding-right:5px;
     border-right:2px solid white;
+
 }
 
 div.wrapper{
-    width:960px;
+    width:1000px;
     margin:auto;
 }
 
