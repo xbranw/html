@@ -5,7 +5,6 @@
     <title>formulier</title>
     <style>
         * {
-            border: dotted 1px grey;
             margin: 10px;
             align-self: center;
         }
@@ -20,6 +19,7 @@
             grid-template-columns: 16% 34% 10% 40%;
         }
         h1 {
+            color:black;
             grid-column: 1/5;
             font-size:30px;
         }
@@ -29,7 +29,6 @@
         }
         .textinputs {
             width:300px;
-            border: solid 1px cornflowerblue;
         }
         #ogen {
             grid-column: 2/5;
@@ -37,9 +36,10 @@
         #kleurogen{
             grid-column:1/5;
         }
-        .textarea {
-            height: 100px;
+        #buttons {
+            grid-column: 4/5;
         }
+
 
     </style>
 </head>
@@ -112,8 +112,11 @@
 
     <div></div>
     <div></div>
+
+    <div id="buttons">
     <button type="button" onclick="alert('geannulleerd!')">Annuleer</button>
     <button type="button">OK</button>
+    </div>
 
 
 
