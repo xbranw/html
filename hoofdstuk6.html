@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>formulier</title>
+    <style>
+        * {
+            border: dotted 1px grey;
+            margin: 10px;
+            align-self: center;
+        }
+        body {
+        margin: 0;
+            padding:30px;
+            font-family: sans-serif;
+            font-size:18px;
+        }
+        form {
+            display: grid;
+            grid-template-columns: 16% 34% 10% 40%;
+        }
+        h1 {
+            grid-column: 1/5;
+            font-size:30px;
+        }
+        .eten {
+            display:flex;
+            grid-column: 4/5;
+        }
+        .textinputs {
+            width:300px;
+            border: solid 1px cornflowerblue;
+        }
+        #ogen {
+            grid-column: 2/5;
+        }
+        #kleurogen{
+            grid-column:1/5;
+        }
+        .textarea {
+            height: 100px;
+        }
+
+    </style>
+</head>
+<body>
+<form action="http://www.savatarian.com/html5/form.php" method="post">
+
+    <h1> Voorbeeldformulier</h1>
+
+    <label for="voornaam">Voornaam</label>
+    <input class="textinputs" type="text" name="voornaam" id="voornaam">
+
+    <label> Lekker eten</label>
+    <div class="eten">
+        <input type="checkbox">
+        <label>Sperziebonen</label>
+    </div>
+
+    <label for="tussenvoegsel">Tussenvoegsel</label>
+    <input type="text" name="tussenvoegsel" id="tussenvoegsel">
+
+    <div class="eten">
+        <input type="checkbox">
+        <label>Aardappelen</label>
+    </div>
+
+    <label for="Achternaam">Achternaam</label>
+    <input type="text" name="Achternaam" id="Achternaam">
+
+    <div class="eten">
+        <input type="checkbox">
+        <label>Hamburger</label>
+    </div>
+
+    <label for="geslacht"> Geslacht</label>
+    <div id="geslacht">
+        <input type="radio" name="geslacht" value="m">
+        <label>Man</label>
+        <input type="radio" name="geslacht" value="v">
+        <label>Vrouw</label>
+    </div>
+
+    <div></div>
+    <div></div>
+
+    <label for="kleurogen"> Kleur ogen</label>
+    <div id="ogen">
+    <select name="kleurogen" id="kleurogen">
+        <option value="blauw"> Blauw</option>
+        <option value="bruin"> Bruin</option>
+        <option value="groen"> Groen</option>
+        <option value="zwart"> Zwart</option>
+    </select>
+</div>
+
+<label for="Geboortedatum"> Geboortedatum</label>
+    <div id="datum">
+        <select name="datum" id="Geboortedatum">
+            <option value="1998"> 1998</option>
+            <option value="1998"> 1999</option>
+            <option value="1998"> 2000</option>
+            <option value="1998"> 2001</option>
+        </select>
+    </div>
+
+    <div></div>
+    <div></div>
+
+    <label for="Omschrijving"> Omschrijving</label>
+    <textarea name="Omschrijving" rows="5" cols="50"> </textarea>
+
+    <div></div>
+    <div></div>
+    <button type="button" onclick="alert('geannulleerd!')">Annuleer</button>
+    <button type="button">OK</button>
+
+
+
+
+</form>
+
+</body>
+</html>
